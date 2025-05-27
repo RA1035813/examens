@@ -1,8 +1,8 @@
 ---
-title: Fullstack 
+title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-27T17:24:19.620Z
+date: 2025-05-27T18:43:09.743Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T17:22:38.462Z
