@@ -2,10 +2,10 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-27T18:43:09.743Z
+date: 2025-05-27T18:54:31.617Z
 tags: examen, fullstack
 editor: markdown
-dateCreated: 2025-05-27T17:22:38.462Z
+dateCreated: 2025-05-27T18:52:46.061Z
 ---
 
 # Cheat Sheet Fullstack
