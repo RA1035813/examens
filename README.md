@@ -13,6 +13,6 @@ samenvattingen voor de examens
 
 Deze github repo is gelinkt aan een docker contain van **wiki.js** op mijn pc.
 
-[FullStack](/nl/samenvattingen/FullStack)
+[FullStack](/samenvattingen/FullStack.md)
 
-[Cloud](/nl/samenvattingen/Cloud)
+[Cloud](/samenvattingen/Cloud.md)
