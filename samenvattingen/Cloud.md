@@ -11,8 +11,6 @@ dateCreated: 2025-05-27T18:52:44.453Z
 # Cloud & Dev Ops
 ## hier komt de samenvatting nog
 
-Okééé, adem in... adem uit... koffie erin... Hier gaan we, al die examenleerdoelen erdoor rammen voor het licht wordt. Pfff, zoveel. Maar goed, alles uit die cursusbronnen dus. Hier is de samenvatting slash brain dump.
-
 # Inhoudsopgave
 &nbsp;
 &nbsp;
