@@ -2,7 +2,7 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-28T10:19:15.873Z
+date: 2025-05-28T12:40:20.961Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T18:52:46.061Z
@@ -412,4 +412,4 @@ function PostMachine() {
 }
 ```
 
-[Cloud & Dev Ops](/nl/home/damned123/Bureaublad/semester2Examens/cloud/wiki/wiki)
+[README](/nl/README)
