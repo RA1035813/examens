@@ -235,4 +235,4 @@ Challenges deel 7: Grafana dashboard panel maken met Prometheus data (http reque
   * docker compose ps: **Toont de services** die draaien binnen het project.   
 * Docker Compose wordt beschouwd als Infrastructure as Code (IaC) omdat je je infrastructuur (containers, netwerken etc.) definieert in een codebestand, wat zorgt voor automatisering, versiebeheer, en reproduceerbaarheid. 
 
-[README](/README)
+[README](/README.md)
