@@ -2,7 +2,7 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-28T09:46:04.537Z
+date: 2025-05-28T10:18:21.054Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T18:52:46.061Z
@@ -141,7 +141,7 @@ def execute_sql_query(sql_query, query_parameters=None):
         return result
 ```
 
-### [main.py](http://main.py)
+### main.py
 
 ```
 from fastapi import FastAPI
