@@ -2,7 +2,7 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-28T10:18:21.054Z
+date: 2025-05-28T10:18:42.062Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T18:52:46.061Z
@@ -87,7 +87,7 @@ Project
 
 ## Backend
 
-### [config.py](http://config.py)
+### config.py
 
 ```
 import os
@@ -99,7 +99,7 @@ db_connection = os.environ.get('DB_CONNECTION')
 allowed_origins = os.environ.get('ALLOWED_ORIGINS', "")
 ```
 
-### [database.py](http://database.py)
+### database.py
 
 ```
 import psycopg
