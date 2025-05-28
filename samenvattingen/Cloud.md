@@ -2,7 +2,7 @@
 title: Cloud
 description: Samenvatting voor cloud examen
 published: true
-date: 2025-05-28T12:39:49.179Z
+date: 2025-05-28T12:41:17.135Z
 tags: examen, cloud
 editor: markdown
 dateCreated: 2025-05-27T18:52:44.453Z
@@ -235,4 +235,4 @@ Challenges deel 7: Grafana dashboard panel maken met Prometheus data (http reque
   * docker compose ps: **Toont de services** die draaien binnen het project.   
 * Docker Compose wordt beschouwd als Infrastructure as Code (IaC) omdat je je infrastructuur (containers, netwerken etc.) definieert in een codebestand, wat zorgt voor automatisering, versiebeheer, en reproduceerbaarheid. 
 
-[README](/nl/README)
+[README](/README)
