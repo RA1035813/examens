@@ -2,7 +2,7 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-27T18:54:31.617Z
+date: 2025-05-28T09:46:04.537Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T18:52:46.061Z
@@ -29,28 +29,28 @@ dateCreated: 2025-05-27T18:52:46.061Z
 
 ## Frontend
 
-### Project Structuur 
+### Project Structuur
 
 ```
 Project
-	CSS
-		Bootstrap.min.CSS
-			Bootstrap.min.css.map
-		Js
-			Bootstrap.bundle.min.js
-		global_vars.CSS
-		main.CSS
-	Assets
-		Images
-		Logo.SVG
-	Index.HTML
-	Pages
-		Contact.HTML
-		aboutUs.HTML
-		…
+    CSS
+        Bootstrap.min.CSS
+            Bootstrap.min.css.map
+        Js
+            Bootstrap.bundle.min.js
+        global_vars.CSS
+        main.CSS
+    Assets
+        Images
+        Logo.SVG
+    Index.HTML
+    Pages
+        Contact.HTML
+        aboutUs.HTML
+        …
 ```
 
-### Standard opmaak Index.html 
+### Standard opmaak Index.html
 
 ```
 <html lang="nl">
@@ -72,7 +72,7 @@ Project
 </html>
 ```
 
-### Standaard opmaak main.CSS 
+### Standaard opmaak main.CSS
 
 ```
 /* Import student CSS letter types here*/
@@ -85,9 +85,10 @@ Project
 @import "global_vars.css";
 ```
 
-## Backend 
+## Backend
 
-### config.py 
+### [config.py](http://config.py)
+
 ```
 import os
 from dotenv import load_dotenv
@@ -98,7 +99,8 @@ db_connection = os.environ.get('DB_CONNECTION')
 allowed_origins = os.environ.get('ALLOWED_ORIGINS', "")
 ```
 
-### database.py 
+### [database.py](http://database.py)
+
 ```
 import psycopg
 import config
@@ -139,7 +141,8 @@ def execute_sql_query(sql_query, query_parameters=None):
         return result
 ```
 
-### main.py 
+### [main.py](http://main.py)
+
 ```
 from fastapi import FastAPI
 from routes import student1_endpoints, student2_endpoints, student3_endpoints
@@ -204,17 +207,18 @@ insert_machines_query = "INSERT INTO student2.machines(name, oorsprong, garantie
 ### Endpoints
 
 ##### **imports**
+
+´´´  
+from fastapi import APIRouter  
+import database  
+import models.student2\_models
+
+from queries import student2\_queries as queries  
 ´´´
-from fastapi import APIRouter
-import database
-import models.student2_models
 
-from queries import student2_queries as queries
-´´´
+#### *Get*
 
-#### _Get_
-
-**_naam_**
+***naam***
 
 ```
 @student2.get("/machines/name")
@@ -232,7 +236,7 @@ def get_name_machines():
    return {"machines": machines_to_return}
 ```
 
-**_accordion_**
+***accordion***
 
 ```
 @student2.get("/machines/accordion")
@@ -258,7 +262,7 @@ def get_accordion_machines():
    return {"machines": machines_to_return}
 ```
 
-#### _Post_
+#### *Post*
 
 ```
 @student2.post("/machines")
@@ -300,7 +304,6 @@ pleaseWork();
 
 ### vandaag funtie:
 
-
 ```
 var vandaag = new Date();
 
@@ -327,8 +330,7 @@ console.log(formatDatum(vandaag));  // vb: "27/05/2025"
 console.log(formatDatum(vandaag, "a")) // 2025-05-27
 ```
 
-
-## GETTER 
+## GETTER
 
 ```
 function get() {
@@ -370,7 +372,7 @@ function get() {
 }
 ```
 
-## POST 
+## POST
 
 ```
 function PostMachine() {
@@ -409,4 +411,5 @@ function PostMachine() {
    });
 }
 ```
+
 [Cloud & Dev Ops](/nl/home/damned123/Bureaublad/semester2Examens/cloud/wiki/wiki)
