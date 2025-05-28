@@ -2,7 +2,7 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-28T12:40:20.961Z
+date: 2025-05-28T12:40:57.677Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T18:52:46.061Z
@@ -412,4 +412,4 @@ function PostMachine() {
 }
 ```
 
-[README](/nl/README)
+[README](/README)
