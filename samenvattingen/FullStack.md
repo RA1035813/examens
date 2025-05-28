@@ -2,7 +2,7 @@
 title: Fullstack
 description: Samenvatting voor examen fullstack
 published: true
-date: 2025-05-28T10:18:42.062Z
+date: 2025-05-28T10:19:15.873Z
 tags: examen, fullstack
 editor: markdown
 dateCreated: 2025-05-27T18:52:46.061Z
@@ -208,13 +208,13 @@ insert_machines_query = "INSERT INTO student2.machines(name, oorsprong, garantie
 
 ##### **imports**
 
-´´´  
+``` 
 from fastapi import APIRouter  
 import database  
 import models.student2\_models
 
 from queries import student2\_queries as queries  
-´´´
+```
 
 #### *Get*
 
