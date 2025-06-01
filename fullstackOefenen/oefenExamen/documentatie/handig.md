@@ -43,11 +43,31 @@ div.card[style="width: 18rem;"]>img.card-img-top[src="https://via.placeholder.co
 live-server
 ```
 
-![Hello World](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAUCAAAAAAVAxSkAAABrUlEQVQ4y+3TPUvDQBgH8OdDOGa+oUMgk2MpdHIIgpSUiqC0OKirgxYX8QVFRQRpBRF8KShqLbgIYkUEteCgFVuqUEVxEIkvJFhae3m8S2KbSkcFBw9yHP88+eXucgH8kQZ/jSm4VDaIy9RKCpKac9NKgU4uEJNwhHhK3qvPBVO8rxRWmFXPF+NSM1KVMbwriAMwhDgVcrxeMZm85GR0PhvGJAAmyozJsbsxgNEir4iEjIK0SYqGd8sOR3rJAGN2BCEkOxhxMhpd8Mk0CXtZacxi1hr20mI/rzgnxayoidevcGuHXTC/q6QuYSMt1jC+gBIiMg12v2vb5NlklChiWnhmFZpwvxDGzuUzV8kOg+N8UUvNBp64vy9q3UN7gDXhwWLY2nMC3zRDibfsY7wjEkY79CdMZhrxSqqzxf4ZRPXwzWJirMicDa5KwiPeARygHXKNMQHEy3rMopDR20XNZGbJzUtrwDC/KshlLDWyqdmhxZzCsdYmf2fWZPoxCEDyfIvdtNQH0PRkH6Q51g8rFO3Qzxh2LbItcDCOpmuOsV7ntNaERe3v/lP/zO8yn4N+yNPrekmPAAAAAElFTkSuQmCC)
 
-![Alt text](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA...)
 
-![frondend-layout](/home/damned123/Bureaublad/oefenExamen/documentatie/img/2025-06-01_13-17.png)
+
+![frondend-layout](img/2025-06-01_13-17.png)
+
+#### **of:**
+```
+frond-end/
+├── CheatSheet.docx.md
+├── css
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── global_vars.css
+│   └── main.css
+├── index.html
+├── js
+│   ├── backend.js
+│   ├── bootstrap.bundle.min.js
+│   ├── test.js
+│   └── voorbeeld.js
+└── oefenExamen.md
+
+3 directories, 11 files
+damned123@q4ospc:~$
+```
 ### javascript:
 ```
 function getCards() {
@@ -222,7 +242,33 @@ uvicorn main:app --reload
 ```
 
 
-![frondend-layout](/home/damned123/Bureaublad/oefenExamen/documentatie/img/2025-06-01_13-27.png)
+![frondend-layout](img/2025-06-01_13-27.png)
+#### **of:**
+```
+back-end
+├── CheatSheet.docx.md
+├── config.py
+├── database.py
+├── main.py
+├── models
+│   ├── model.py
+│   └── __pycache__
+│       └── model.cpython-311.pyc
+├── oefenExamen.md
+├── __pycache__
+│   ├── config.cpython-311.pyc
+│   ├── database.cpython-311.pyc
+│   └── main.cpython-311.pyc
+├── queries
+│   ├── __pycache__
+│   │   └── querie.cpython-311.pyc
+│   └── querie.py
+├── requirements.txt
+└── routes
+    ├── endpoint.py
+    └── __pycache__
+        └── endpoint.cpython-311.pyc
+```
 ## .env
 ```
 DB_CONNECTION=postgresql://boekenwinkel_owner:npg_E2PfdVn5wLKa@ep-plain-flower-a9oetzvn-pooler.gwc.azure.neon.tech/boekenwinkel?sslmode=require
@@ -388,6 +434,6 @@ def get_title(titel: str):
 
 ```
 # Resultaat
-![resultaat](/home/damned123/Bureaublad/oefenExamen/documentatie/img/2025-06-01_13-36.png)
+![resultaat](img/2025-06-01_13-36.png)
 ### na de post
-![na de post](/home/damned123/Bureaublad/oefenExamen/documentatie/img/2025-06-01_14-12.png)
+![na de post](img/2025-06-01_14-12.png)
