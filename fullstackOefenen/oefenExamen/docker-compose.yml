@@ -1,0 +1,58 @@
+version: '3.9'
+
+services:
+  backend:
+    build: ./back
+    container_name: fastapi-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./back:/app
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mydb
+
+  frontend:
+    image: nginx
+    container_name: nginx-frontend
+    volumes:
+      - ./frond:/usr/share/nginx/html:ro
+    depends_on:
+      - backend
+    networks:
+      - proxy
+
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./drawSQL-pgsql-export-2025-06-01.sql:/docker-entrypoint-initdb.d/init.sql
+
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "81:81"  # NPM admin interface
+      - "443:443"
+    volumes:
+      - npm_data:/data
+      - npm_letsencrypt:/etc/letsencrypt
+    networks:
+      - proxy
+
+volumes:
+  pgdata:
+  npm_data:
+  npm_letsencrypt:
+
+networks:
+  proxy:
+    driver: bridge
