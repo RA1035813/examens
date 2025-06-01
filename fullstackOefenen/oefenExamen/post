@@ -1,0 +1,15 @@
+
+    {
+        "id": 1,
+        "titel": "De Hobbit",
+        "auteur": "J.R.R. Tolkien",
+        "prijs": 19.99
+    },
+    {
+        "id": 2,
+        "titel": "Het Achterhuis",
+        "auteur": "Anne Frank",
+        "prijs": 12.50
+    }
+
+

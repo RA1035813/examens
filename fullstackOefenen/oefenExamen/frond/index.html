@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boekenwinkel</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <nav>coole boeken winkel</nav>
+</header>
+<main>
+    <div id="boeken">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Boek01
+                    </button>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Voorbeeld inhoud van een willekeurig boek</div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Post-->
+    <section id="machine">
+        <h2>New machine</h2>
+        <form class="mt-3">
+            <div class="mb-3">
+                <label for="id" class="form-label">id</label>
+                <input type="text" class="form-control" id="id" required />
+            </div>
+            <div class="mb-3">
+                <label for="titel" class="form-label">titel</label>
+                <input type="text" class="form-control" id="titel" required />
+            </div>
+            <div class="mb-3">
+                <label for="auteur" class="form-label">auteur</label>
+                <textarea class="form-control" id="auteur" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="prijs" class="form-label">prijs</label>
+                <textarea class="form-control" id="prijs" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success" id="send">Send</button>
+        </form>
+        <div class="alert alert-primary mt-3 d-none" role="alert" id="contactMessage">
+            Thanks for your message! We will reply as soon as we can.
+        </div>
+    </section>
+
+
+    <footer></footer>
+</main>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/test.js"></script>
+</body>
+</html>

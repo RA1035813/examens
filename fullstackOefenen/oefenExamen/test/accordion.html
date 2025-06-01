@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Accordion Item #1</button>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Accordion body content</div>
+                    </div>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Accordion Item #1</button>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Accordion body content</div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+        <footer></footer>
+    </main>
+</body>
+</html>
+
+
+html:5>(header>nav)+main>(div.accordion#accordionExample>(div.accordion-item>h2.accordion-header>button.accordion-button[type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"]{Accordion Item #1}+div#collapseOne.accordion-collapse.collapse.show[data-bs-parent="#accordionExample"]>div.accordion-body{Accordion body content})*2)+footer
