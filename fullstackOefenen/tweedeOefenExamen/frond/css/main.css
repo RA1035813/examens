@@ -1,0 +1,263 @@
+/*lettertypes*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "bootstrap.min.css";
+@import "global_vars.css";
+
+/* Import student CSS files here */
+/*@import "../../student1/css/student1.css";*/
+/*@import "../../student2/css/student2.css";*/
+/*@import "../../student3/css/student3.css";*/
+/*@import "../../student4/css/student4.css";*/
+
+
+/*footer {*/
+/*    position: sticky;*/
+/*    bottom: 0;*/
+/*    text-align: center;*/
+/*    background-color: var(--secondary-color, #80929E);*/
+/*}*/
+
+body {
+    font-family: "Raleway", sans-serif;
+
+    h1 {
+        font-family: "Playfair Display", serif;
+    }
+
+    background-color: var(--mm-secondary-50);
+}
+
+::selection {
+    background-color: var(--mm-primary-100);
+    color: var(--mm-alert-400);
+}
+
+/*Main page content*/
+
+/*Banners*/
+
+.h1_banner {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: var(--mm-primary-50);
+    color: var(--mm-secondary-600);
+    font-size: 4rem;
+
+    .bi-arrow-up-circle {
+        margin-left: 3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--mm-secondary-600);
+
+        &:hover {
+            color: var(--mm-primary-100);
+        }
+    }
+}
+
+.h2_banner {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: var(--mm-secondary-100);
+    color: var(--mm-secondary-600);
+    font-size: 2.5rem;
+
+    .bi-arrow-up-circle {
+        margin-left: 3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--mm-secondary-600);
+
+        &:hover {
+            color: var(--mm-primary-100);
+        }
+    }
+}
+
+/*Carousel*/
+.main_page_carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+
+    .carousel-caption {
+        color: var(--mm-secondary-100);
+        bottom: 1.25rem;
+
+        .link_carousel {
+            color: var(--mm-secondary-100);
+
+            &:hover {
+                color: var(--mm-secondary-200);
+            }
+
+        }
+    }
+}
+
+/*Intro (De wereld van Matcha Moon)*/
+.intro_main_page {
+    background-color: var(--mm-secondary-100);
+    padding: 4vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2rem;
+    width: auto;
+
+    .row_intro {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .image_intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-right: auto;
+        }
+
+        .figcap_intro {
+            color: var(--mm-secondary-600);
+            text-align: center;
+
+            .link_foto_intro {
+                color: var(--mm-secondary-600);
+
+                &:hover {
+                    color: var(--mm-secondary-200);
+                }
+            }
+
+        }
+
+        #main_page_intro_card {
+            margin: 0 auto;
+            text-align: center;
+            padding: 3rem;
+            color: var(--mm-secondary-600);
+            background-color: var(--mm-secondary-200);
+            width: 100%;
+
+        }
+
+    }
+}
+
+
+/*Nieuwe selectie*/
+
+
+.nieuwe_selectie_card {
+    width: 20rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--mm-secondary-600);
+    background-color: var(--mm-secondary-200);
+    padding: 1rem;
+
+    .nieuwe_selectie_image {
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding: 0.5rem;
+        border-radius: 9rem;
+    }
+
+    .nieuwe_selectie_card_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        word-wrap: normal;
+
+        .nieuwe_selectie_btn {
+            --bs-btn-bg: var(--mm-secondary-400);
+            --bs-btn-color: var(--mm-primary-50);
+            --bs-btn-border-color: var(--mm-secondary-400);
+            --bs-btn-hover-color: var(--mm-secondary-400);
+            --bs-btn-hover-bg: var(--mm-primary-50);
+            --bs-btn-hover-border-color: var(--mm-primary-50);
+            margin-top: auto;
+        }
+    }
+
+}
+
+
+.oor_card {
+    width: 40rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--mm-secondary-600);
+    background-color: var(--mm-secondary-200);
+    padding: 1rem;
+
+    .oor_card_header {
+        background-color: var(--mm-secondary-100);
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .oor_card_title {
+        margin-top: 1rem;
+
+    }
+
+    .oor_card_text {
+        margin: 3rem;
+
+    }
+
+    .oor_btn {
+        --bs-btn-bg: var(--mm-secondary-400);
+        --bs-btn-color: var(--mm-primary-50);
+        --bs-btn-border-color: var(--mm-secondary-400);
+        --bs-btn-hover-color: var(--mm-secondary-400);
+        --bs-btn-hover-bg: var(--mm-primary-50);
+        --bs-btn-hover-border-color: var(--mm-primary-50);
+        margin-top: auto;
+    }
+}
+
+/*.jb-badge {
+    background-color: var(--mm-secondary-400);
+    color: var(--mm-secondary-50);
+}
+
+.jb-card {
+    background-color: var(--mm-alert-300);
+    color: var(--mm-alert-25);
+
+    div {
+        a {
+            background-color: var(--mm-alert-25);
+            color: var(--mm-alert-700);
+        }
+
+        a:hover {
+            color: var(--mm-alert-25);
+            background-color: var(--mm-alert-700);
+        }
+    }
+
+    img {
+        height: 300Px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}*/

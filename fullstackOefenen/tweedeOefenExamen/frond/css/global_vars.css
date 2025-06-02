@@ -1,0 +1,67 @@
+/* Global CSS variabels + overwrite Bootstrap variabels comes here */
+
+:root {
+    /* mm-primary colors */
+    --mm-primary-25: #e6f0e8;
+    --mm-primary-50: #cce1d2;
+    --mm-primary-100: #99c2a5;
+    --mm-primary-200: #67a477;
+    --mm-primary-300: #34854a;
+    --mm-primary-400: #01671d;
+    --mm-primary-500: #015d1a;
+    --mm-primary-600: #015217;
+    --mm-primary-700: #014814;
+    --mm-primary-800: #013e11;
+    --mm-primary-900: #01340f;
+    --mm-primary-950: #00290c;
+
+    /* mm-secondary colors */
+    --mm-secondary-25: #f3f0eb;
+    --mm-secondary-50: #e7e0d7;
+    --mm-secondary-100: #d0c1af;
+    --mm-secondary-200: #b8a388;
+    --mm-secondary-300: #a18460;
+    --mm-secondary-400: #896538;
+    --mm-secondary-500: #7b5b32;
+    --mm-secondary-600: #6e512d;
+    --mm-secondary-700: #604727;
+    --mm-secondary-800: #523d22;
+    --mm-secondary-900: #45331c;
+    --mm-secondary-950: #372816;
+
+    /* mm-tertiary colors */
+    --mm-tertiary-25: #fefdfb;
+    --mm-tertiary-50: #fdfaf6;
+    --mm-tertiary-100: #fbf5ed;
+    --mm-tertiary-200: #f9f0e5;
+    --mm-tertiary-300: #f7ebdc;
+    --mm-tertiary-400: #f5e6d3;
+    --mm-tertiary-500: #ddcfbe;
+    --mm-tertiary-600: #c4b8a9;
+    --mm-tertiary-700: #aca194;
+    --mm-tertiary-800: #938a7f;
+    --mm-tertiary-900: #7b736a;
+    --mm-tertiary-950: #625c54;
+
+    /* mm-alert colors */
+    --mm-alert-25: #e9ecec;
+    --mm-alert-50: #d2dad9;
+    --mm-alert-100: #a6b4b4;
+    --mm-alert-200: #798f8e;
+    --mm-alert-300: #4d6969;
+    --mm-alert-400: #204443;
+    --mm-alert-500: #1d3d3c;
+    --mm-alert-600: #1a3636;
+    --mm-alert-700: #16302f;
+    --mm-alert-800: #132928;
+    --mm-alert-900: #102222;
+    --mm-alert-950: #0d1b1b;
+
+    .mm-bg-color-primary {
+        background-color: var(--mm-primary-50);
+    }
+
+    .navbar-toggler {
+        border: none !important;
+    }
+}
