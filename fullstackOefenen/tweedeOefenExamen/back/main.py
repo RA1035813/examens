@@ -14,7 +14,7 @@ app.add_middleware(
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Accept"],
 )
-app.include_router(router=endpoint.film)
+app.include_router(router=endpoint.FilmArchief)
 
 @app.get("/")
 def root():

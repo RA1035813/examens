@@ -4,17 +4,17 @@ import models.model
 # from models import model
 from queries import query as queries
 
-film = APIRouter()
+FilmArchief = APIRouter()
 # post
 
-@film.post("/nieuwe/film")
+@FilmArchief.post("/nieuwe/film")
 def add_film(films: models.model.film):
    query = queries.insert_films_query
    insert = database.execute_sql_query(query, (
-       film.id,
-       film.titel,
-       film.auteur,
-       film.prijs,
+       films.id,
+       films.titel,
+       films.regisseur,
+       films.jaar,
        ))
    if insert == True:
        return films
@@ -22,7 +22,7 @@ def add_film(films: models.model.film):
        return {"error": "Something went wrong..."}
 
 # GET
-@film.get("/all/films")
+@FilmArchief.get("/all/films")
 def get_films():
     query = queries.get_films_query
     films = database.execute_sql_query(query)
@@ -36,9 +36,9 @@ def get_films():
                       "jaar": scene[3],
                       }
         films_to_return.append(dictionary)
-    return {"boeken" : films_to_return}
+    return {"films" : films_to_return}
 
-@film.get("/titel/film")
+@FilmArchief.get("/titel/film")
 def get_title(titel: str):
     query = queries.get_films_query
     films = database.execute_sql_query(query, (titel,))
@@ -52,4 +52,4 @@ def get_title(titel: str):
                       "jaar": scene[3],
                       }
         films_to_return.append(dictionary)
-    return {"boeken": films_to_return}
+    return {"films": films_to_return}

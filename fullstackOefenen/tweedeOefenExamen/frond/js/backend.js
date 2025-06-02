@@ -1,5 +1,5 @@
 function getCards() {
-    const cardsOutput = document.querySelector("#boeken");
+    const cardsOutput = document.querySelector("#cards");
     console.log("API request sent...");
 
     fetch("http://127.0.0.1:8000/all/films")
@@ -10,27 +10,27 @@ function getCards() {
             return antwoord.json();
         })
         .then((data) => {
-            console.log("Boeken data ontvangen:", data);
+            console.log("Films data ontvangen:", data);
 
-            if (!data.boeken || data.boeken.length === 0) {
+            if (!data.films || data.films.length === 0) {
                 cardsOutput.innerHTML = `<div class="alert alert-primary" role="alert">
-                    Geen boeken gevonden!
+                    Geen films gevonden!
                 </div>`;
                 return;
             }
 
             let cards = "";
 
-            data.boeken.forEach((boek) => {
-                console.log(boek);
+            data.films.forEach((film) => {
+                console.log(film);
                 cards += `<div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${boek.id}">
-                            ${boek.titel}
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${film.id}">
+                            ${film.titel}
                         </button>
-                        <div id="collapse${boek.id}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="collapse${film.id}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Geschreven door: ${boek.auteur} - €${boek.prijs}
+                                Geschreven door: ${film.regisseur} - €${film.jaar}
                             </div>
                         </div>
                     </h2>
@@ -43,9 +43,9 @@ function getCards() {
                 </div>`;
         })
         .catch((error) => {
-            console.error("Fout bij ophalen boeken:", error);
+            console.error("Fout bij ophalen films:", error);
             cardsOutput.innerHTML = `<div class="alert alert-danger" role="alert">
-                Sorry, we konden de boeken niet ophalen.
+                Sorry, we konden de films niet ophalen.
             </div>`;
         });
 }
